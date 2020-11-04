@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.4.4.112?>
+<Cpu xmlns="http://br-automation.co.at/AS/Cpu">
+  <Objects>
+    <Object Type="File" Description="Software configuration">Cpu.sw</Object>
+    <Object Type="File" Description="Permanent variables">Cpu.per</Object>
+    <Object Type="File" Description="IO mapping file">IoMap.iom</Object>
+    <Object Type="File" Description="PV mapping file">PvMap.vvm</Object>
+  </Objects>
+  <Configuration>
+    <AutomationRuntime Version="F4.44" />
+    <Build AnsicIncludeDirectories="\Logical\TS_UnitTest\Libraries\UnitTest\,\Logical\TS_UnitTest\Samples\Framework_Extension_With_Custom_Asserts\LibAssert1\" GccVersion="4.1.2" GeneratePPCode="false" PreBuildStep="" />
+    <DefaultTargetMemory Tasks="UserROM" />
+    <Transfer RunUnitTestsAfterTransfer="true" GenerateRUCPackage="true" />
+    <OnlineConfiguration Name="ARsim_TCPIP" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/RT=1000 /AM=* /DAIP=127.0.0.1 /REPO=11160 /ANSL=1" Description="" />
+  </Configuration>
+</Cpu>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.3.111 SP?>
+<Package Version="1.00.0" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Global data types">Global.typ</Object>
+    <Object Type="File" Description="Global variables">Global.var</Object>
+    <Object Type="Package">TS_UnitTest</Object>
+    <Object Type="Package">UnitTests</Object>
+    <Object Type="Package" Description="Global libraries">Libraries</Object>
+    <Object Type="Program" Language="IEC">Alarms</Object>
+    <Object Type="Program" Language="IEC">VisCtrl</Object>
+    <Object Type="DataObject" Language="Vc" Description="640x480 (VGA)">Visu</Object>
+  </Objects>
+</Package>

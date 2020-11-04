@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="TestAlarm" />
+        <Property ID="Message" Value="&quot;Test Alarm!&quot;" />
+        <Property ID="Code" Value="10001" />
+        <Property ID="Severity" Value="10" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="Acknowledge" Value="3" />
+        </Selector>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

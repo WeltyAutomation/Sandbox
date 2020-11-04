@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.8.3.111 SP?>
+<Library Version="5.08.0" SubType="Binary" Description="Advanced alarm management" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File>MpAlarmX.typ</File>
+    <File>MpAlarmXError.typ</File>
+    <File>MpAlarmX.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="MpBase" FromVersion="5.08.0" ToVersion="5.08.9" />
+    <Dependency ObjectName="astime" />
+  </Dependencies>
+</Library>
