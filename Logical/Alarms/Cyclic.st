@@ -29,6 +29,8 @@ PROGRAM _CYCLIC
 		gAlarm.TestAlarm := FALSE;
 		MpAlarmXReset(gAlarmXCore, 'TestAlarm');			
 	END_IF
+	gAlarm.ResetCount := MpAlarmXCheckReaction(gAlarmXCore, 'ResetCount');
+
 	
 END_PROGRAM
 

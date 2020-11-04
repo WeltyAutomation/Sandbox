@@ -1,5 +1,3 @@
 VAR
-	gCmd : CmdType;
-	gStatus : StatusType;
 	gAlarm : AlarmType;
 END_VAR

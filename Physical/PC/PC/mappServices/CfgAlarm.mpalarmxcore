@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
   <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core">
+      <Group ID="Mapping">
+        <Group ID="[0]">
+          <Property ID="Alarm" Value="CountTooHigh" />
+          <Selector ID="[0]" Value="Reaction">
+            <Property ID="Name" Value="ResetCount" />
+          </Selector>
+        </Group>
+      </Group>
+    </Group>
     <Group ID="mapp.AlarmX.Core.Configuration">
       <Group ID="[0]">
         <Property ID="Name" Value="TestAlarm" />
@@ -15,7 +25,17 @@
         <Property ID="Name" Value="CountTooHigh" />
         <Property ID="Code" Value="10002" />
         <Property ID="Severity" Value="9" />
-        <Selector ID="Behavior" Value="LevelMonitoring" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Property ID="Acknowledge" Value="0" />
+          <Property ID="ReactionUntilAcknowledged" Value="FALSE" />
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Count:Count" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="255" />
+              <Property ID="LimitText" Value="Count Too High" />
+            </Selector>
+          </Group>
+        </Selector>
       </Group>
     </Group>
   </Element>

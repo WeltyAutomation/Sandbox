@@ -40,12 +40,15 @@
       <TextGroup>
         <TextLayer LanguageId="en">
           <Text ID="211065" Value="TestAlarm"/>
+          <Text ID="213839" Value="COUNT"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="211065" Value=""/>
+          <Text ID="213839" Value="Text_1"/>
         </TextLayer>
         <IndexMap>
           <Index ID="211065" Value="29"/>
+          <Index ID="213839" Value="31"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -1029,6 +1032,37 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_227]"/>
           <Property Name="Width" Value="77"/>
         </Control>
+        <Control ClassId="0x00001007" Name="Numeric_1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="297"/>
+          <Property Name="MaxDatapoint" Value="None"/>
+          <Property Name="MaxValue" Value="None"/>
+          <Property Name="MinDatapoint" Value="None"/>
+          <Property Name="MinValue" Value="None"/>
+          <Property Name="SimulationValue" Value="0"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpDefault]"/>
+          <Property Name="TeachDatapoint" Value="None"/>
+          <Property Name="Top" Value="438"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.Count.Count]"/>
+          <Property Name="ValueMode" Value="Standard"/>
+          <Property Name="Width" Value="55"/>
+        </Control>
+        <Control ClassId="0x00001004" Name="Text_1">
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="Height" Value="30"/>
+          <Property Name="Left" Value="222"/>
+          <Property Name="SimulationIndex" Value="0"/>
+          <Property Name="SimulationValue" Value=""/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[MpBubbleText]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndexOffset" Value="31"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="440"/>
+          <Property Name="Width" Value="56"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="%embVirtualKey_192">
@@ -1218,5 +1252,6 @@
     <TabSeqItem Index="3" Value="Source[embedded].Layer[Default].Control[lbxAlarmCode]"/>
     <TabSeqItem Index="4" Value="Source[embedded].Layer[Default].Control[lbxAlarmStatus]"/>
     <TabSeqItem Index="5" Value="Source[embedded].Layer[Default].Control[lbxAlarmTimestamp]"/>
+    <TabSeqItem Index="6" Value="Source[embedded].Layer[Default].Control[Numeric_1]"/>
   </TabSequence>
 </Page>
