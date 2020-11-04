@@ -2,10 +2,4 @@ VAR
 	MpAlarmXListUI_0 : MpAlarmXListUI;
 	MpAlarmXCore_0 : MpAlarmXCore;
 	MpAlarmXListUIConnect : MpAlarmXListUIConnectType;
-	AlarmButton : BOOL;
-	ChangeStyleAlarmButton : BOOL;
-	AlarmVideo : WSTRING[255] := "";
-	AlarmInfo : BOOL := 0;
-	FilterConfiguration : STRING[1000] := '';
-	SortConfiguration : STRING[1000] := '';
 END_VAR

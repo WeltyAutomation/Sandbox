@@ -10,5 +10,6 @@
     <Object Type="Program" Language="IEC">Alarms</Object>
     <Object Type="Program" Language="IEC">VisCtrl</Object>
     <Object Type="DataObject" Language="Vc" Description="640x480 (VGA)">Visu</Object>
+    <Object Type="Program" Language="IEC">Count</Object>
   </Objects>
 </Package>

@@ -11,6 +11,12 @@
           <Property ID="Acknowledge" Value="3" />
         </Selector>
       </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="CountTooHigh" />
+        <Property ID="Code" Value="10002" />
+        <Property ID="Severity" Value="9" />
+        <Selector ID="Behavior" Value="LevelMonitoring" />
+      </Group>
     </Group>
   </Element>
 </Configuration>

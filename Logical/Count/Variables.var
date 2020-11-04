@@ -1,0 +1,4 @@
+VAR
+	Count : USINT;
+	StopCount : BOOL;
+END_VAR
